@@ -1,73 +1,82 @@
 <html lang="en-US">
 <head> </head>
 <body>
-  Command
-
-Description
-
-Bot Response Message
-
-/create-sota 
-
-Creates a new SoT fleet category channel as well as a role (if it didn’t exist) for that fleet.  The role is named Fleet-N where N is the number of the fleet that was created. 
-
-A public message saying the fleet was created, or with what went wrong if it was not successful.
-
-/membercount
-
-The bot sends a message containing the current number of members in the server.
-
-The bot will not respond to the interaction (the command invocation message will be deleted).
-
-/ping
-
-Pings the bot to test responsiveness. If the bot does not respond, then it is malfunctioning and should be restarted.
-
-A public message with the text “Pong”
-
-/region-roles
-
-Sends the region role selection message to to the pirate code channel
-
-A public message that indicates the region-role message has been sent.  Otherwise, responds with what went wrong.
-
-/remove-sota number
-
-Removes the fleet category matching number
-
-A public message saying the fleet was created, or with what went wrong if it was not successful.
-
-/rename-sota old new
-
-Renames the fleet category channel from SoT Fleet old to SoT Fleet new.
-Also renames the Fleet-old role to Fleet-new
-
-A public message saying the fleet was renamed, or with what went wrong if it was not successful.
-
-/say sotsellrotation [channel]
-
-Sends the Sea of Thieves Fleet guidelines message to channel. Defaults to the current channel.
-
-A public message with the text “Success” on success, or a description of the error on failure.
-
-/say embed content [Attachment]
-
-The bot sends an embedded message containing the text in content on behalf of the user to the channel the command was used in. If attachment is present and is an image, then it is added to the embed as an image.  See the example in the Appendix
-
-The bot will not respond to the interaction (the command invocation message will be deleted).
-
-/sota-member-tracker
-
-Sends the member-tracker message to the member-tracker channel. This message is automatically sent whenever the bot is restarted.
-
- 
-
-/sotofficer-duty
-
-Sends the SoT on/off duty message to the on/off duty channel.  This message is automatically sent whenever the bot is restarted.
-
-A public message that indicates the SoT-duty message has been sent.  Otherwise, responds with what went wrong.
-
+  <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-ir3w{background-color:#B3D4FF;border-color:inherit;color:#172B4D;text-align:left;vertical-align:top}
+.tg .tg-mkh5{background-color:#F4F5F7;border-color:inherit;color:#172B4D;text-align:left;vertical-align:top}
+.tg .tg-hfnn{background-color:#4C9AFF;border-color:inherit;color:#172B4D;font-weight:bold;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-hfnn">Command<br></th>
+    <th class="tg-hfnn">Description<br></th>
+    <th class="tg-hfnn">Bot Response Message<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-mkh5"><span style="font-weight:normal">/create-sota </span></td>
+    <td class="tg-mkh5"><span style="font-weight:normal">Creates a new SoT fleet category channel as well as a role (if it didn’t exist) for that fleet.&nbsp;&nbsp;The role is named Fleet-N where N is the number of the fleet that was created. </span></td>
+    <td class="tg-mkh5"><span style="font-weight:normal">A public message saying the fleet was created, or with what went wrong if it was not successful.</span></td>
+  </tr>
+  <tr>
+    <td class="tg-ir3w"><span style="font-weight:normal">/membercount</span></td>
+    <td class="tg-ir3w"><span style="font-weight:normal">The bot sends a message containing the current number of members in the server.</span></td>
+    <td class="tg-ir3w"><span style="font-weight:normal">The bot will not respond to the interaction (the command invocation message will be deleted).</span></td>
+  </tr>
+  <tr>
+    <td class="tg-ir3w"><span style="font-weight:normal">/ping</span></td>
+    <td class="tg-ir3w"><span style="font-weight:normal">Pings the bot to test responsiveness. If the bot does not respond, then it is malfunctioning and should be restarted.</span></td>
+    <td class="tg-ir3w"><span style="font-weight:normal">A public message with the text “Pong”</span></td>
+  </tr>
+  <tr>
+    <td class="tg-mkh5"><span style="font-weight:normal">/region-roles</span></td>
+    <td class="tg-mkh5"><span style="font-weight:normal">Sends the region role selection message to to the pirate code channel</span></td>
+    <td class="tg-mkh5"><span style="font-weight:normal">A public message that indicates the region-role message has been sent.&nbsp;&nbsp;Otherwise, responds with what went wrong.</span></td>
+  </tr>
+  <tr>
+    <td class="tg-mkh5"><span style="font-weight:normal">/remove-sota </span>number</td>
+    <td class="tg-mkh5"><span style="font-weight:normal">Removes the fleet category matching </span>number</td>
+    <td class="tg-mkh5"><span style="font-weight:normal">A public message saying the fleet was created, or with what went wrong if it was not successful.</span></td>
+  </tr>
+  <tr>
+    <td class="tg-ir3w"><span style="font-weight:normal">/rename-sota </span>old new</td>
+    <td class="tg-ir3w"><span style="font-weight:normal">Renames the fleet category channel from SoT Fleet </span>old<span style="font-weight:normal"> to SoT Fleet </span>new.<br><span style="font-weight:normal">Also renames the Fleet-</span>old<span style="font-weight:normal"> role to Fleet-</span>new</td>
+    <td class="tg-ir3w"><span style="font-weight:normal">A public message saying the fleet was renamed, or with what went wrong if it was not successful.</span></td>
+  </tr>
+  <tr>
+    <td class="tg-ir3w"><span style="font-weight:normal">/say sotsellrotation </span>[channel]</td>
+    <td class="tg-ir3w"><span style="font-weight:normal">Sends the Sea of Thieves Fleet guidelines message to </span>channel<span style="font-weight:normal">. Defaults to the current channel.</span></td>
+    <td class="tg-ir3w"><span style="font-weight:normal">A public message with the text “Success” on success, or a description of the error on failure.</span></td>
+  </tr>
+  <tr>
+    <td class="tg-mkh5"><span style="font-weight:normal">/say embed </span>content [Attachment]</td>
+    <td class="tg-mkh5"><span style="font-weight:normal">The bot sends an embedded message containing the text in </span>content <span style="font-weight:normal">on behalf of the user to the channel the command was used in. If </span>attachment<span style="font-weight:normal"> is present and is an image, then it is added to the embed as an image.&nbsp;&nbsp;See the example in the Appendix</span></td>
+    <td class="tg-mkh5"><span style="font-weight:normal">The bot will not respond to the interaction (the command invocation message will be deleted).</span></td>
+  </tr>
+  <tr>
+    <td class="tg-ir3w"><span style="font-weight:normal">/sota-member-tracker</span></td>
+    <td class="tg-ir3w"><span style="font-weight:normal">Sends the member-tracker message to the member-tracker channel. This message is automatically sent whenever the bot is restarted.</span></td>
+    <td class="tg-ir3w"><span style="font-weight:normal"> </span></td>
+  </tr>
+  <tr>
+    <td class="tg-mkh5"><span style="font-weight:normal">/sotofficer-duty</span></td>
+    <td class="tg-mkh5"><span style="font-weight:normal">Sends the SoT on/off duty message to the on/off duty channel.&nbsp;&nbsp;This message is automatically sent whenever the bot is restarted.</span></td>
+    <td class="tg-mkh5"><span style="font-weight:normal">A public message that indicates the SoT-duty message has been sent.&nbsp;&nbsp;Otherwise, responds with what went wrong.</span></td>
+  </tr>
+  <tr>
+    <td class="tg-ir3w"><span style="font-weight:normal"> </span></td>
+    <td class="tg-ir3w"><span style="font-weight:normal"> </span></td>
+    <td class="tg-ir3w"><span style="font-weight:normal"> </span></td>
+  </tr>
+</tbody>
+</table>
  
 
  
